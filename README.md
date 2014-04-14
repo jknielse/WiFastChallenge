@@ -10,6 +10,13 @@ pip install unidecode
 
 The specifics of the problem definition can be found in ProblemConfiguration.json, and can be re-defined if desired.
 
+To run the solution, simply run
+
+```bash
+python SnowmanAnalysis.py
+```
+
+
 The general approach used to solve this problem was as follows:
 - Determine which blocks might contain the transactions in question and download them
 - Filter the transactions within the downloaded blocks to only ones that fit the filters in the config file (the filters in the config file were made by taking the highest and lowest value of bitcoins over the specified period to get an upper and lower bound on the transaction value)
