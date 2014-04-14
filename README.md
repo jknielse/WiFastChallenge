@@ -25,3 +25,14 @@ The general approach used to solve this problem was as follows:
 - If there is still ambiguity, rank each address by "how well" the suspected transactions fit the filters. To do this, each suspected transaction is given a weight based on its distance from the mean of the filter (normalized by the bounds of the filter). 
 - The sum of the weights of the best fitting transactions for each specified transaction are taken to be the weight of the suspect.
 - The suspect with the lowest weight (implying closest to the filter means) is assumed to be the guilty party.
+
+
+## Notes
+
+Since it takes a while to download all of the blocks in question, this solution makes sure not to re-download
+everything every time you run it. The same goes for filtering. This was very helpful for debugging the analysis logic
+because It allows you to run analysis in rapid succession without waiting a half hour and abusing the network connection.
+
+If you alter the config file, the blocks will be re-downloaded. This was to make sure that if the date range changed, the appropriate
+blocks would still be retrieved. It could have been made more efficiently (by checking the date range and only re-downloading when necessary),
+or by requiring the entire block chain to be downloaded, but for the purpose of this excercise I felt that this solution was good enough.
