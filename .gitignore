@@ -54,3 +54,5 @@ docs/_build/
 
 #Other stuff:
 *~
+BlockData.json
+FilteredTransactions.json

@@ -1,0 +1,18 @@
+{   "filterInformation": [{	"addr":"1dice8EMZmqKvrGE4Qc9bUFf9PX3xaYDp",
+							"max": 0.01785714285,
+							"min": 0.00147492625},
+						{	"addr":"1dice7W2AicHosf5EL3GFDUVga7TgtPFn",
+							"max": 0.02678571428,
+							"min": 0.00737463126},
+						{	"addr":"1dice97ECuByXAvqXpaYzSaQuPVvrtmz6",
+							"max": 0.02678571428,
+							"min": 0.00737463126}],
+
+	"dateRange":{"start": { "year":2014,
+							"month":3,
+							"day":3},
+				 "end":   { "year":2014,
+							"month":3,
+							"day":6}
+				}
+}
